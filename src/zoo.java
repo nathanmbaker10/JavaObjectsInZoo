@@ -1,11 +1,9 @@
-public class zoo {
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.ArrayList;
 
+public class zoo {
     String favoriteFood = "bacon";
-    public static void main(String[] args) {
-        zoo z = new zoo();
-        z.eat("Tigger", "meat");
-        z.eat("Tigger", "bacon");
-    }
 
     public void sleep(String name) {
         System.out.println(name + " sleeps for 8 hours.");

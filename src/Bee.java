@@ -4,12 +4,15 @@ public class Bee extends Animal {
     }
 
     public void eat(String food) {
-        System.out.println(this.name + " eats " + food);
         if (food == this.favoriteFood) {
-            System.out.println("Yum!!! " + this.name + " wants more " this.favoriteFood);
+            super.eat(food);
             this.sleep();
         } else {
             System.out.println("Yuck!! " + this.name + " will not eat " + food);
         }
+    }
+
+    public void sleep() {
+        System.out.println(this.name + " never sleeps");
     }
 }
